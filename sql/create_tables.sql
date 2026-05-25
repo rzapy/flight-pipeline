@@ -1,0 +1,21 @@
+create table if not exists airplanes (
+    id int generated always as identity primary key,
+    icao24 text,
+    callsign text,
+    origin_country text,
+    time_position int,
+    last_contact int,
+    longitude float,
+    latitude float,
+    baro_altitide float,
+    on_ground boolean,
+    velocity float,
+    true_track float,
+    vertical_rate float,
+    geo_altitude float,
+    squawk text,
+    spi boolean,
+    position_source int,
+    category int,
+    fetched_at timestamp
+);
