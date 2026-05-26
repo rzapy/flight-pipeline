@@ -7,7 +7,7 @@ create table if not exists airplanes (
     last_contact int,
     longitude float,
     latitude float,
-    baro_altitide float,
+    baro_altitude float,
     on_ground boolean,
     velocity float,
     true_track float,
@@ -16,6 +16,5 @@ create table if not exists airplanes (
     squawk text,
     spi boolean,
     position_source int,
-    category int,
     fetched_at timestamp
 );
